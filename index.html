@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izracunavanje zarade</title>
+
+    <script src="https://kit.fontawesome.com/aba640f387.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Container-budget -->
+    <div class="container-budget">
+        <div class="current-budget">
+            <h3>Dostupan budžet u Novembru 2019:</h3>
+            <!-- <span >+ 5,493.99</span> -->
+        </div>
+        <!-- Container-income -->
+        <div class = "container-income clearfix">
+            <h3>PRIHOD</h3>
+            <!-- <span> + 32,125.34</span> -->
+        </div>
+        <!-- Container-income END -->
+         <!-- Container-expense -->
+        <div class="container-expense clearfix">
+            <h3>RASHOD</h3>
+            <!-- <span class="percent">83%</span>
+            <span> - 26,631.35</span> -->
+            
+        </div>
+       <!-- Container-expense END -->
+    </div>
+     <!-- Contaienr-budget END -->
+     <!--  Container-forma -->
+     <div class="form-style">
+        <form id="forma">
+            <select class="select-field">
+                <option value="-"> - </option>
+                <option value="+">+</option>
+             </select>
+
+            <textarea class="textarea-field" placeholder="Opis"></textarea>
+
+            <input type="text" class="amount" placeholder="Iznos"/>
+             
+            <button type="submit" class="submit "><i class="far fa-check-circle"></i></button>
+        </form> 
+     </div>
+     <!--  Container-forma END-->
+     <!-- Container-tabele -->
+     
+     <div class=" row clearfix">
+        <div class="col-1">
+           <table class="table-income">
+              <thead>
+                    <tr>
+                        <th colspan="3">PRIHODI</th>
+                    </tr>
+              </thead>
+              <!-- <tbody>
+                    <tr class = "tr-hover">
+                        <td class ="td-income">Plata</td>
+                        <td class ="td-income-amount">+ 32,125.34</td>
+                        <td ><button class="btn-del"><i class="fas fa-times"></i></button></td>
+                    </tr>
+              </tbody> -->
+            </table>
+        </div>
+        <div class="col-2">
+            <table class="table-expense">
+               <thead>
+                     <tr>
+                        <th colspan="3">RASHODI</th>
+                    </tr>
+               </thead>
+                <!-- <tbody>
+                    <tr class = "tr-hover">
+                        <td class = "td-expense">Školarina</td>
+                        <td class="td-expense-amount"> - 17,060.35 <span> 53%</span></td>
+                        <td><button class="btn-del"><i class="fas fa-times"></i></button></td>
+                    </tr>
+                    <tr class = "tr-hover">
+                        <td>Nepredviđeni troškovi</td>
+                        <td class="td-expense-amount"> - 9,571.000 <span> 30%</span></td>
+                        <td><button class="btn-del"><i class="fas fa-times"></i></button></td>
+                    </tr>
+               </tbody> -->
+             </table>
+        </div>
+    </div>
+     <!-- Container-tabele END-->
+    
+<script src = "main.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/**********************************************************
+                            Global Styles
+**********************************************************/
+* {
+    box-sizing:border-box ;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    font-size: 16px;
+}
+
+/*********************************************************       
+             Layout
+**********************************************************/
+.container-budget{
+    text-align: center;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+100,363738+100 */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 100%, rgba(54,55,56,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 100%,rgba(54,55,56,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 100%,rgba(54,55,56,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#363738',GradientType=0 ); /* IE6-9 */
+
+color: white;
+padding-top: 10px;
+padding-bottom:10px ;
+}
+
+.container-income {
+background-color: #17a2b8;
+width: 500px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 20px auto;
+}
+.container-expense {
+    background-color:#dc3545;;
+    width: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px auto;
+}
+
+.form-style {
+ background-color:#ece8e8;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.col-1 {
+    width: 50%;
+    float :left;
+    padding: 10px;
+}
+.col-2 {
+    width: 50%;
+    float :right;
+    padding: 10px;
+}
+/*********************************************************
+                     Specific Styles
+**********************************************************/
+.container-budget h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+.container-budget span {    
+    font-size: 40px;
+}
+.container-income h3{
+    font-size: 16px; 
+    color: #000; 
+    float: left;
+}
+.container-income span{
+    font-size: 16px; 
+    float: right; 
+    padding-right: 40px;
+    padding-top: 15px;
+}
+.container-expense h3 {
+    font-size: 16px;
+    color: #000;
+    float: left;
+}
+.container-expense span{
+    font-size: 16px;  
+    float: right;
+    padding-top: 15px;
+}
+.container-expense .percent {
+    font-size: 12px;
+    border-radius: 10%;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5) ;
+    padding: 2px 4px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 15px;
+   
+}
+
+.select-field {
+    border-radius: 5%;
+    height: 50px;
+    width: 60px;
+    border:1px solid #ddd;
+}
+.textarea-field {
+    height: 50px;
+    width: 500px; 
+    margin-bottom: -20px;
+    padding-top: 15px;
+    border:1px solid #ddd;  
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textarea-field:focus {
+    outline-style: none;
+}
+.amount{
+    height: 50px; 
+    border:1px solid #ddd;
+    font-size: 16px;
+}
+.amount:focus {
+    outline-style: none;
+}
+#forma {
+    position: relative;
+}
+.submit{
+ border:none;
+ position: absolute;
+ top: 5px;
+ background-color: #ece8e8;
+}
+.submit:focus{
+    outline-style: none; 
+}
+.submit i {
+    display: inline-block;
+    color :red;
+    font-size: 40px;    
+}
+
+.table-income {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    table-layout: fixed;
+}
+.table-income th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: #17a2b8;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+  
+}
+.table-income tr td{
+    border-bottom: 1px solid #ddd;  
+    padding: 8px;
+    text-align: left;
+}
+
+/* .table-income tbody tr .td-income {
+    text-align:left;
+} */
+.td-income-amount{
+    color: #17a2b8;
+}
+.btn-del {
+   display: none    
+}
+.btn-del:focus{
+    outline: none; 
+    border: none;
+}
+.tr-hover:hover .btn-del{
+    display:block; 
+    color:#dc3545;
+    border:1px solid #ddd; 
+    float: right;
+}
+
+.table-expense {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    table-layout: fixed; 
+}
+
+.table-expense th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color:#dc3545;
+  border-bottom: 1px solid #ddd;    
+  font-weight: normal;
+  
+}
+.table-expense tr td {
+    border-bottom: 1px solid #ddd;  
+    padding: 8px;
+    text-align: left;
+}
+
+/* .table-expense tr:nth-child(even){
+    background-color: #f2f2f2;
+} */
+
+.td-expense-amount{
+  color:#dc3545;
+
+}
+
+.td-expense-amount span {
+    height: 20px;
+    float: right;
+    background-color: rgba(216 166 166 / 50%) ;
+    border-radius: 10%;
+    padding: 2px 4px;
+}
+
+/*****************************************************            
+           Helper Classes
+******************************************************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
