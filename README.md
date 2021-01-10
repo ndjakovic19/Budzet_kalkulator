@@ -1,1 +1,1 @@
-# Buzet_kalkulator
+# Budzet_kalkulator
